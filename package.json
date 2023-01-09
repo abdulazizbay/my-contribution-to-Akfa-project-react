@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "nvm": "^0.0.4"
+  },
+  "scripts": {
+    "start": "some command to be run",
+    "test": "(eslint lib || true) && jest"
+  }
+}
