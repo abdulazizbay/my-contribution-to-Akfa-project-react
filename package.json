@@ -1,9 +1,10 @@
 {
   "dependencies": {
-    "nvm": "^0.0.4"
-  },
-  "scripts": {
-    "start": "some command to be run",
-    "test": "(eslint lib || true) && jest"
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.4",
+    "phosphor-react": "^1.4.1",
+    "sass": "^1.57.1"
   }
 }

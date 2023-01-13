@@ -1,8 +1,11 @@
+import React from "react";
+import './styles/base.scss'
+import FirstWindow from "./components/main/FirstWindow";
 
 function App() {
   return (
-    <div>
-      
+    <div className="app">
+      <FirstWindow/>
     </div>
   );
 }

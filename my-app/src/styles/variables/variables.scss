@@ -1,0 +1,22 @@
+// Urls
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Kanit&family=PT+Sans+Caption&display=swap');
+
+//Variables
+$primary_font:'PT Sans Caption', sans-serif;
+$gray: #c4c4c4;
+$lightGray:#a5a5a5;
+$white:#fff;
+$lightgray2:#EDEEEE;
+$grayFont:#727272;
+$black:#000000;
+
+//mixins
+@mixin boxGraySmall($color,$margin){
+    width: 24px;
+    height: 24px;
+    background-color: $color;
+    margin: $margin;
+}
+button{
+    cursor: pointer;
+}
