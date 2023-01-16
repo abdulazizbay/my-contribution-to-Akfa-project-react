@@ -7,12 +7,18 @@
     font-family: $primary_font;
     margin-left: 135px; 
     margin-right: 135px;
-    position: absolute;
     
-    position: absolute;
     white-space: nowrap;
     overflow: hidden;
 }
 button{
     cursor: pointer;
+    border: none;
+    
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+}
+button:hover{
+    background-color: $lightgray2;
+    color: $black;
+    
 }

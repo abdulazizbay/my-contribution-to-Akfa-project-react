@@ -20,3 +20,16 @@ $black:#000000;
 button{
     cursor: pointer;
 }
+
+@mixin calculatorPageRadioInput{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: $lightGray;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}

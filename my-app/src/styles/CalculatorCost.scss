@@ -1,0 +1,153 @@
+//urls
+@import './variables/variables.scss';
+
+//styles
+.CalculatorCost{
+    float: left;
+    position: absolute;
+    margin-top: 2320px;
+    display: grid;
+    h1{
+        margin-left: 535px;
+    }
+    .windowOrBalcony{
+        margin: 56px 0 0 433px;
+        button{
+            margin-right: 143px;
+            background-color: $white;
+            border:none;
+            border-radius: 4px;
+            width: 277px;
+            height: 42px;
+            font-weight: 500px;
+            font-size: 16px;
+            color: $grayFont;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            visibility: hidden;
+        }
+        button:hover{
+            color: $black;
+            background-color: $lightgray2;  
+        }
+    }
+    
+
+    .preferences{
+        margin-left: 160px; 
+        width: 500px;
+        .typeOfWindow{
+                h4{
+                    margin: 64px 0 24px 0 ;
+                    font-weight: 500px;
+                    font-size: 16px;   
+                }
+                button{
+                    margin-right: 8px;
+                    height: 42px;
+                    width: 178px;
+                    color: $grayFont;
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+            }
+        .typeOfHome{
+            margin: 162px 0 60px 0;
+            
+            label{
+                opacity: 0.6;
+            }
+            input[type='radio']:checked:after {
+                @include calculatorPageRadioInput;
+            }
+        }   
+        .typeOfProfile{
+            
+            margin: 0 0 60px 0;
+            label{
+                margin-right: 50px;
+                opacity: 0.6;
+            }
+            input[type='radio']:checked:after {
+                @include calculatorPageRadioInput;
+            }
+        }
+        .othersAndLamination{
+            display: flex;
+            .others{
+                margin: 0 0 60px 0;
+                label{
+                    margin-right: 50px;
+                    opacity: 0.6;
+                }
+                input[type='radio']:checked:after {
+                    @include calculatorPageRadioInput;
+                }
+            }
+            .lamination{
+                margin: 0 0 60px 70px;
+                label{
+                    margin-right: 50px;
+                    opacity: 0.6;
+                    
+                }
+                input[type='radio']:checked:after {
+                    @include calculatorPageRadioInput;
+                }
+            }
+        }
+        .getFinalResult{
+            button{
+                border: none;
+            }
+        }
+    }
+    .sizeImageCost{
+        grid-area: right;
+        .witHeight{
+            display: flex;
+            opacity: 0.6;
+            font-weight: 500;
+            font-size: 14px;
+            input[type="number"]::-webkit-outer-spin-button,
+            input[type="number"]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+            input[type="number"] {
+                -moz-appearance: textfield;
+            }
+            input{
+                margin: 7px 64px 0 24px;
+                width: 64px;
+                height: 34px;
+            }
+        }
+        .imageVerticalRange{
+            input[type=range][orient=vertical]
+            {
+                writing-mode: bt-lr; /* IE */
+                -webkit-appearance: slider-vertical; /* Chromium */
+                width: 4px;
+                height: 350px;
+                padding: 0 5px;
+                margin: 62px 28px 0 0;
+                accent-color: $gray;
+            }
+            
+            img{
+                border: 64px solid $lightgray2;
+                width: 216px ;
+                height: 223px;
+                border-radius: 15px;
+
+            }
+        }
+        .imageHorizontalRange{
+            margin: 28px 0 0 50px;
+            input{
+                accent-color: $gray;
+                width: 330px;
+            }
+        }
+    }
+}
