@@ -34,7 +34,6 @@
 
     .preferences{
         margin-left: 160px; 
-        width: 500px;
         .typeOfWindow{
                 h4{
                     margin: 64px 0 24px 0 ;
@@ -98,7 +97,15 @@
         .getFinalResult{
             button{
                 border: none;
+                background-color: $lightGray;
+                width: 230px;
+                height: 45px;
+                color: $white;
+                border-radius: 6px; 
+                margin-left: 900px;
+                position: absolute;
             }
+
         }
     }
     .sizeImageCost{
@@ -148,6 +155,10 @@
                 accent-color: $gray;
                 width: 330px;
             }
-        }
+            
     }
+    .stoimost{
+        margin-left: 150px;
+    }
+}
 }

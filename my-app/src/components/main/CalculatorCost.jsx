@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import AmountCost from '../secondary/AmountCost'
 export const CalculatorCost = () => {
   const [rangeWitdh,setrangeWitdh] = useState(800);
   const [rangeHeight,setrangeHeight] = useState(800);
@@ -92,7 +91,7 @@ export const CalculatorCost = () => {
             </div>
 
             <div className='amountCost'>
-              <h3>Стоимость</h3>
+              <h3>Стоимость: <span className='stoimost'>{finalCost} руб</span></h3>
               <p>Расрочка за 791 р/мес.</p>
               
     
