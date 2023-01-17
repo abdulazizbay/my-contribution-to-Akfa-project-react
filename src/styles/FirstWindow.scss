@@ -1,0 +1,192 @@
+//urls
+@import './variables/variables.scss';
+
+//styles
+
+.oknoprofi{
+    display: flex;
+    float: left;
+
+    h1{
+        width: 179px;
+        height: 27px;
+        margin: 33px 55px 0 0;
+    }
+    button{
+        height: 45px;
+        width: 135px;
+        margin: 24px 16px 27px 0;
+        border: 1.5px solid $lightGray;
+        border-radius: 6px;
+        background-color: $white;
+        opacity: 0.6px;
+        color: $lightGray;
+    }
+    .grayBox{
+        @include boxGraySmall($gray, 19px 16px 0 91px);//background-color,margin
+    }
+    .adress{
+        margin: 0px 78px 7px 0;
+        width: 160px;
+        height: 36px;
+        font-size: 14px;
+        color: $lightGray;
+    }
+    .call{
+        cursor: pointer;
+        .number{
+            width: 195px;
+            height: 21px;
+            font-size: 21px;
+            font-weight: bold;
+            }
+        .bookCall{
+            width: auto;
+            height: 14px;
+            font-size: 14px;
+            color: $lightGray;
+        }
+    }  
+}
+.choices{
+    border: 2px black;
+    border: solid;
+    display: flex;
+    margin: 34px 135px 32px 0px;
+    background-color: $lightgray2;
+    float: left;
+    border: none;
+    border-radius: 4px;
+    width: 1170px;
+    height: 42px;
+    p{
+        margin: 0px 80px 0 auto;
+        font-size: 16px;
+        color: $grayFont;
+        width: auto;
+        padding: 13px 0 13px 0px;
+        
+    }
+    p:hover{
+        color: $black;
+        cursor: pointer;
+    }
+}
+.announceCalculator{
+    width: 1170px;
+    height: 471px;
+    background-color: $gray;
+    float: left;
+    h1{
+        padding: 95px 500px 0px 79px;
+        font-size: 44px;
+    }
+    h6{
+        padding: 0 28px 0 79px;
+        font-size: 16px;
+    }
+    .choicesWarranty{
+        display: flex;
+        p{
+            color: $black;
+            margin: 0 40px 0 16px;
+        }
+        .smallGrayBox{
+            @include boxGraySmall($lightGray, 0px 0 40px 79px);  //background-color,margin
+        }
+    }
+    button{
+        width: 230px;
+        height: 45px;
+        border: none;
+        background-color:$white;
+        border-radius: 6px;
+        margin: 0 0 0px 79px;
+    }
+}
+.specialOffer{
+    float: left;
+    h4{
+        font-size: 32px;
+        margin: 151px 0 26px 400px;
+
+    }
+    .windowImages{
+        display: flex;
+        
+        transition: width 2s;
+        .firstWindow{
+            height: auto;
+            width: 368px;
+            text-align: center;
+            h5{
+                padding:0px 0 34px 0px;
+                letter-spacing: 0.02em;
+                font-size: 24px;
+            }
+            .cost{
+                margin-top: 95px;   
+                .saleCost{
+                    color: $lightGray;
+                    font-size: 16px;
+                }
+                .realCost{
+                    color: $black;
+                    font-size: 24px;
+                    font-weight: 600;
+
+                }
+            }
+            button{
+                border: none;
+                margin-top: 32px;
+                border-radius: 6px;
+                background-color: $lightGray;
+                height: 45px;
+                width: 290px;
+                font-weight: 500;
+                font-size: 16px;
+                color: $white
+            }
+            
+        }
+        .secondWindow{
+            @extend .firstWindow;
+            .cost{
+                margin-top: 123px
+            }
+        }
+        .thirdWindow{
+            @extend .firstWindow;
+        }
+    }
+    .windowImages :hover{
+        transform: scale(1.01);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+}
+.advCompany{
+    float: left;
+    margin-top: 207px;
+    h5{
+        font-weight: 600;
+        font-size: 32px;
+    }
+    .advSingle{
+        display: flex;
+        margin-top: 88px;
+        .icon{
+            color: $grayFont;
+        }
+        h3{
+            font-weight: 600;
+            font-size: 24px;
+            margin-right: 44px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            margin-right: 44px;
+        }
+    }
+}
